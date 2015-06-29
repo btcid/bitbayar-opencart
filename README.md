@@ -14,7 +14,7 @@ In your OpenCart store's administration section, go to Extensions > Extenstion I
   * On the first box column, you will find **API TOKEN**
   * Select and copy the entire string for your API Token. It will look something like this: GD1FA2CC2A3357FDF45B84744FFF7102.
 3. In the admin control panel, Go to Extensions > Payments. Find the BitBayar payment extension and click the install button.
-5. he page will refresh, you'll see a success message, and the install button will turn into a red uninstall button. Click on the edit button.
+5. The page will refresh, you'll see a success message, and the install button will turn into a red uninstall button. Click on the edit button.
 6. Enter your **API Token** from string that you copied from step 1.
 7. Click **Save Changes**.
 
