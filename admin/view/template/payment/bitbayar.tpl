@@ -101,6 +101,16 @@
                   </select>
                 </div>
               </div>
+  
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="entry-email"><?php echo $entry_memo; ?></label>
+                <div class="col-sm-10">
+                  <input type="text" name="bitbayar_memo" value="<?php echo $bitbayar_memo; ?>" placeholder="ie: Invoice #123 Jose Alejandro" class="form-control"/>
+                  <span class="info">Options input to memo : </span><br/>
+                  <span class="info">[invoiceID] = Get invoice number</span>
+                </div>
+              </div>
+              
             </div>
             
             <!-- Tab Status--> 

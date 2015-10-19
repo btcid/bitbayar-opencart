@@ -46,6 +46,7 @@ class ControllerPaymentBitbayar extends Controller {
 		$data['entry_geo_zone']		= $this->language->get('entry_geo_zone');
 		$data['entry_status']		= $this->language->get('entry_status');
 		$data['entry_sort_order']	= $this->language->get('entry_sort_order');
+		$data['entry_memo']			= $this->language->get('entry_memo');
 
 		//~ tabs
 		$data['tab_general']		= $this->language->get('tab_general');
@@ -209,6 +210,12 @@ class ControllerPaymentBitbayar extends Controller {
 			$data['bitbayar_buttons'] = $this->request->post['bitbayar_buttons'];
 		} else {
 			$data['bitbayar_buttons'] = $this->config->get('bitbayar_buttons');
+		}
+
+		if (isset($this->request->post['bitbayar_memo'])) {
+			$data['bitbayar_memo'] = $this->request->post['bitbayar_memo'];
+		} else {
+			$data['bitbayar_memo'] = $this->config->get('bitbayar_memo');
 		}
 
 		if (isset($this->request->post['bitbayar_sort_order'])) {

@@ -23,6 +23,7 @@ $_['entry_buttons_text']	= 'Text Only';
 $_['entry_geo_zone']		= 'Geo Zone:';
 $_['entry_status']			= 'Status:';
 $_['entry_sort_order']		= 'Sort Order:';
+$_['entry_memo']			= 'Invoice Memo:';
 
 //~ Status
 $_['entry_confirmed_status']			= 'Confirmed Status';

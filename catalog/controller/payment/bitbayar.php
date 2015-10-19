@@ -106,12 +106,17 @@ class ControllerPaymentBitbayar extends Controller {
 	$lang = $this->session->data['language'];
 	$settCurr = $this->config->get('bitbayar_currency');
 
+	if(strpos($this->config->get('bitbayar_memo'), '[invoiceID]')) {
+		$memo = str_replace('[invoiceID]', $idorder, $this->config->get('bitbayar_memo'));
+	} else {
+		$memo = $this->config->get('bitbayar_memo');
+	}
 
 	$postData = array(
 		'token'		=> $apiID,
 		'invoice_id'	=> $idorder,
 		'rupiah'		=> $idr_exchange_rate*floatval($price),
-		'memo'			=> 'Invoice #'.$idorder. ' Opencart',
+		'memo'			=> ($this->config->get('bitbayar_memo') ? $memo : 'Invoice #'.$idorder),
 		'callback_url'	=> $this->url->link('payment/bitbayar/callback', '', 'SSL'),
 		'url_success'	=> $this->url->link('payment/bitbayar/return_url'),
 		'url_failed'	=> $this->url->link('payment/bitbayar/return_url')
