@@ -1,6 +1,6 @@
 # Description
 OpenCart Bitcoin Payment plugin using BitBayar service. (https://bitbayar.com)
-This Bitcoin Plugin for Opencart version 2.x.x.
+* This Bitcoin Plugin for Opencart version 2.x.x.
 
 # Precondition
 You must have a BitBayar merchant account to use this plugin. It's free and easy to [register](https://bitbayar.com/register).
