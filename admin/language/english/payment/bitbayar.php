@@ -54,7 +54,6 @@ $_['tab_help']							= 'Help';
 $_['help_api']				= 'API token is used for backed authentication and you should keep it private. You will find your API token in your account under settings & API';
 $_['help_email']			= 'Email where notifications about Payment changes are sent.';
 
-
 //~ Errors
 $_['error_permission']			= 'Warning: You do not have permission to modify this payment module!';
 $_['error_email']				= 'E-Mail required!';
@@ -65,4 +64,5 @@ $_['error_currency']			= 'Payout currency required!';
 $_['error_currency_invalid']	= 'Bad currency... Folowing currencies are supported:';
 $_['error_currency_format']		= 'Bad currency format, use 3 letters';
 $_['error_currency_set']		= 'You dont have any currency added. You need to add at least one payout in your account. Go to your BitBayar account Settings > Payout add the payout account.';
+
 ?>
