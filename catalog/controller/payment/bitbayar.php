@@ -269,7 +269,7 @@ class ControllerPaymentBitbayar extends Controller {
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/success.tpl')) {
 			$this->response->setOutput($this->load->view($this->config->get('config_template') . '/template/common/success.tpl', $data));
 		} else {
-			$this->response->setOutput($this->load->view('default/template/common/success.tpl', $data));
+			$this->response->setOutput($this->load->view('common/success.tpl', $data));
 		}
 	}
 }
